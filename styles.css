@@ -6,15 +6,13 @@
 	background-color: black;
 	height: 2px;
 	width: 200px;
-	animation-name: loop;
-	animation-duration: 3s;
-	animation-iteration-count:infinite;
+	animation: loop 3s linear infinite
 }
-@keyframes loop{
+@keyframes loop {
 	to {
-		transform: rotate(0deg);
-	}
-	from {
 		transform: rotate(360deg);
 	}
+	from {
+		transform: rotate(0deg);
+	} 
 }
